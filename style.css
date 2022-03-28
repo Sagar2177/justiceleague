@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  background-image: url("https://static3.srcdn.com/wordpress/wp-content/uploads/2017/09/Justice-League-Colorful-Character-Posters.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  margin: auto;
+  padding: 3vh;
+  width: 80vh;
+  height: 80vh;
+  /*     background: #fff5; */
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 10%
+    );
+  top: 14%;
+}
+
+.innercircle {
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor:pointer;
+}
+
+.superhero{
+   filter: brightness(15%);
+  
+}
+
+
+/* .active {
+ 
+ filter: brightness(100%);
+} */
+
+.superhero:hover{
+  filter:brightness(50%)
+}
+
+#one {
+  position: absolute;
+  border: none;
+  width: 48%;
+  height: 48%;
+  top: 0;
+  left: 0;
+  background-image: url("https://i.ibb.co/Ry9fRDp/flash.png");
+  background-size: cover;
+}
+
+#two {
+  position: absolute;
+  border: none;
+  width: 48%;
+  height: 48%;
+  top: 0;
+  right: 0;
+  background-image: url("https://i.ibb.co/kySK8Vr/bat.png");
+  background-size: contain;
+}
+
+#three {
+  position: absolute;
+  border: none;
+  width: 48%;
+  height: 48%;
+  bottom: 0;
+  right: 0;
+  background-image: url("https://i.ibb.co/107h3zh/s.png");
+  background-size: cover;
+}
+
+#four {
+  position: absolute;
+  border: none;
+  width: 48%;
+  height: 48%;
+  bottom: 0;
+  left: 0;
+  background-image: url("https://i.ibb.co/nbz7GSL/w.png");
+  background-size: cover;
+}
+
+#score {
+  position: absolute;
+  color: #fff;
+  border: none;
+  width: 28%;
+  height: 28%;
+
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(62, 62, 77, 1) 90%
+  );
+  border-radius: 50%;
+  border: 3px solid #fff;
+  top: 35%;
+  /*     bottom:33%; */
+  left: 36%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.9rem;
+  line-height: 1.9rem;
+  font-weight: 700;
+  background-image: url("https://i.ibb.co/Q8xvSpT/dark-side-center.png");
+  background-size: cover;
+  filter: brightness(90%);
+}
+
+
+#scorebg {
+  background-color: rgb(11, 32, 15);
+  padding: 8px 15px;
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+
+
+
+
+/* start goldern button */
+
+.golden-btn {
+  position: absolute;
+  left: 42%;
+  right: 43%;
+  top: 8%;
+  display: inline-block;
+  outline: none;
+  font-family: inherit;
+  font-size: 1em;
+  border: none;
+  border-radius: .3em;
+  height: 2.75em;
+  line-height: 2.5em;
+  text-transform: uppercase;
+  padding: 0 2em;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+              inset 0 -2px 5px 1px rgba(139,66,8,1),
+              inset 0 -1px 1px 3px rgba(250,227,133,1);
+  background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+  border: 1px solid #a55d07;
+  color: rgb(120,50,5);
+  text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  background-size: 100% 100%;
+  background-position:center;
+  text-align: center;
+}
+.golden-btn:focus,
+.golden-btn:hover {
+  background-size: 150% 150%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23),
+                inset 0 -2px 5px 1px #b17d10,
+                inset 0 -1px 1px 3px rgba(250,227,133,1);
+  border: 1px solid rgba(165,93,7,.6);
+  color: rgba(120,50,5,.8);
+}
+.golden-btn:active {
+  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+              inset 0 -2px 5px 1px #b17d10,
+                inset 0 -1px 1px 3px rgba(250,227,133,1);
+}
+/* end of golden button */
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  
+  <audio id="startGamesound">
+    <source src="./assets/game_start.mp3" type="audio/mpeg" />
+  </audio>
+  <audio id="endGamesound">
+    <source src="./assets/game_over_arcade.mp3" type="audio/mpeg" />
+  </audio>
+  <!-- before game -->
+  <audio id="beep1">
+    <source src="./assets/beep1.mp3" type="audio/mpeg" />
+  </audio>
+  <audio id="beep2">
+    <source src="./assets/beep2.mp3" type="audio/mpeg" />
+  </audio>
+  <audio id="beep3">
+    <source src="./assets/beep3.mp3" type="audio/mpeg" />
+  </audio>
+  <audio id="beep4">
+    <source src="./assets/beep4.mp3" type="audio/mpeg" />
+  </audio>
+
+
+<div class="container">
+     
+
+    <div class="circle">
+      <div class="innercircle">
+        <div class="superhero" id="one"></div>
+        <div class="superhero" id="two"></div>
+        <div class="superhero" id="three"></div>
+        <div class="superhero" id="four"></div>
+      </div>
+      <div id="score"><span id="scorebg" >0</span></div>
+    </div>
+    <div class="golden-btn start">START</div> 
+
+  </div>
+ 
+  <script  src="./script.js"></script>
+
+</body>
+</html>
