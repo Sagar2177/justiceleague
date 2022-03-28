@@ -23,7 +23,6 @@ startButton.addEventListener("click", (event) => {
   play();
 });
 
-changeCounter.innerHTML = 0; 
 function play() {
   win = false;
   sequence = [];
@@ -169,7 +168,8 @@ function check() {
     gameOver();
     setTimeout(() => {
       changeCounter.innerHTML = turn;
-      darkHero(); 
+      darkHero();
+      
       
     }, 800);
 
@@ -182,7 +182,7 @@ function check() {
     playerSequence = [];
     compTurn = true;
     glow = 0;
-    darkHero.innerHTML = turn;
+    changeCounter.innerHTML = turn;
     intervalId = setInterval(gameTurn, 800);
   }
 }
@@ -191,10 +191,10 @@ function winGame() {
   glowSuperHero();
   changeCounter.innerHTML = "HEROES WIN!";
   win = true;
-  intervalId = setInterval(reset, 1800);
- 
 }
 
-function reset(){
-  changeCounter.innerHTML = 0; 
+
+
+function reset() {
+  changeCounter.innerHTML = 0;
 }
